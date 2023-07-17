@@ -1,20 +1,20 @@
 package com.landroute.model;
 
-import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Country {
 
     String cca3;
-    List<String> borders;
+    Set<String> borders;
 
     public String getCca3() {
         return cca3;
     }
 
-    public List<String> getBorders() {
+    public Set<String> getBorders() {
         return borders;
     }
 
@@ -22,7 +22,7 @@ public class Country {
         this.cca3 = cca3;
     }
 
-    public void setBorders(List<String> borders) {
+    public void setBorders(Set<String> borders) {
         this.borders = borders;
     }
 
